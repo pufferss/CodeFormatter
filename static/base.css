@@ -1,0 +1,22 @@
+body {
+    background-color: midnightblue;
+    color: white;
+}
+
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  }
+
+#navbar li {
+    list-style-type: none;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+}
