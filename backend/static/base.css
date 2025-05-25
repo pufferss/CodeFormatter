@@ -1,0 +1,77 @@
+body {
+    background-color:rgb(30, 30, 30);
+    color: white;
+}
+
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  }
+
+#navbar li {
+    list-style-type: none;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.custum-file-upload {
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 40px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+
+#border {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+#group-border {
+    display: flex;
+    justify-content: center;
+}
