@@ -185,7 +185,6 @@ class PY:
     
     def GetIndentationInfo(self):
         dico = {
-            "2_spaces" : len(re.findall(r"^  \w+", self.Data, re.MULTILINE)),
             "4_spaces" : len(re.findall(r"^    \w+", self.Data, re.MULTILINE)),
             "tabs" : len(re.findall(r"^\t\w+", self.Data, re.MULTILINE)),
         }
