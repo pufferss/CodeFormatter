@@ -170,9 +170,9 @@ class PY:
         }
 
         for ident in self.GetAllIdentifiers():
-            if (re.match(r"[a-z][a-z0-9]*_[a-z0-9_]*", ident)):
+            if (re.match(r"[a-z][a-z0-9]*_[a-z0-9_]*", ident)) or (re.match(r"_[a-z0-9]*", ident)):
                 dico["snake_case"].append(ident)
-            elif (re.match(r"[A-Z][a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*", ident)): 
+            elif (re.match(r"[A-Z][a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*", ident)) or (re.match(r"[A-Z][a-z0-9]*", ident)): 
                 dico["PascalCase"].append(ident)
             elif (re.match(r"[a-z][a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*", ident)): 
                 dico["camelCase"].append(ident)
