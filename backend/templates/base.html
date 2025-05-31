@@ -7,8 +7,21 @@
     {%block style %}
         <link rel="stylesheet" href= "{{ url_for('static',filename='base.css') }}">
     {%endblock%}
+    {%block script%}
+    {%endblock%}
 </head>
-<body>    
+<body>
+    <nav id="navbar" class="no-highlight">
+        <a id="mainlogo" href="{{ url_for('index') }}">Code Formatter</a>
+        <div id="menu-toggle" onclick="document.getElementById('navbar').classList.toggle('show')">
+            &#9776;
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Code Formatter</a></li>
+            <li><a href="{{ url_for('checker') }}">Convention Checker</a></li>
+            <li><a href="{{ url_for('obfuscator') }}">Shader Obfuscator</a></li>
+        </ul>
+    </nav>
     {% block content%}
     {% endblock %}
 
